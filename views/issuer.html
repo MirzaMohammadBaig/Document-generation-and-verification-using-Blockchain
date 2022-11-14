@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generate Document</title>
+    <link rel="stylesheet" href="../static/CSS/generate.css" />
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><h1>DOCUMENT GENERATION AND VERIFICATION USING BLOCKCHAIN</h1></li>
+                <div id="log">
+                    <li> <a id="logout" href="http://localhost:3000/logout">Logout!</a> </li>
+                </div>
+
+            </ul>
+        </nav>
+        
+    </header>
+    <div class="head">
+        <h1>CERTIFICATE</h1>
+    </div>
+    <div class="container">
+        <form action="generate" method="post">
+            <div class="doc">
+                <label class="up" for="cert">Upload file</label>
+                <input class="up" type="file" name="cert" id="cert" />
+            </div>
+
+            <div class="data" id="name">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter full name" />
+            </div>
+            <div class="data" id="coursename">
+                <label for="course">Course Name</label>
+                <input type="text" name="course" id="course" placeholder="Enter couse name" />
+            </div>
+            <div class="data" id="issuer">
+                <label for="issuer">Issuer</label>
+                <input type="text" name="issuer" id="issuer" placeholder="Enter organisation name" />
+            </div>
+
+            <div class="data" id="date">
+                <label for="date">Date</label>
+                <input type="date" name="date" id="date" />
+            </div>
+            <div class="submit">
+                <input class="dtn" type="submit" name="submit" id="submit" />
+            </div>
+        </form>
+    </div>
+    <div class="container1"> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi voluptatum obcaecati debitis, id molestiae dolorem in accusantium, est quae nobis optio deserunt autem nemo libero! Quas aliquid nobis nulla! Perferendis, tenetur. Corrupti, dolorum ipsam! Officia quibusdam vero aspernatur odio eius fuga amet accusamus laboriosam repellat excepturi libero necessitatibus nemo unde, ipsum velit tempora corporis ea praesentium blanditiis vitae? Earum dolor quam ab, ullam inventore ipsam totam quisquam odio consectetur magni illo excepturi neque magnam, dolore dolorem repellendus tempore ad exercitationem. Vitae praesentium consequatur incidunt officia esse vel quia. Et nemo doloribus laudantium eveniet hic omnis reprehenderit, accusamus officia odio ab!</p></div>
+   
+</body>
+
+</html>

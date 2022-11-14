@@ -1,0 +1,100 @@
+*{
+    margin: 0px;
+}
+
+.outer{
+
+    /* border: 3px solid black; */
+    /* overflow: auto; */
+    width: 80%;
+    display: block;
+    margin: 85px auto;
+}
+.container{
+    
+    /* border: 3px solid black; */
+    padding : 5px;
+    margin : 10px;
+    display: inline-block;
+    width: 40%;
+    /* float: inline-start; */
+    height: 20em;
+    margin-top: 83px;
+}
+
+#logo{
+    height: 20em;
+    margin-top: 63px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin-right: 40px;
+}
+#logo h3{
+    margin-top: 189px;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+input, #lbtn, #cna{
+    display: block;
+    margin: 10px auto;
+    width: 350px;
+    padding: 7px 10px;
+    border: 0px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#cna{
+    width: 100%;
+}
+form{
+    margin-top: 20px;
+}
+#lbtn, #cna{
+    cursor: pointer;
+
+}
+#lbtn:hover{
+    background-color: rgb(218, 216, 216);
+}
+#cna{
+    background-color: rgb(172, 172, 172);
+}
+#cna:hover{
+    background-color: rgb(149, 149, 149);
+}
+.newacc{ 
+    display: block;
+    width : 70%;
+    margin: 20px auto;
+    border-top: 2px rgb(0, 0, 0) solid;
+}
+#login h2{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+}
+footer{
+
+    background-color: black;
+    text-align: center;
+    color: rgb(155, 158, 160);
+    height: 80px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    padding-top: 30px;
+    display: none;
+}
+footer a{
+    text-decoration: none;
+    color: rgb(155, 158, 160);;
+    
+}
+#CreateAcc{
+    text-decoration: none;
+    padding: 2px;
+    color: black;
+}
