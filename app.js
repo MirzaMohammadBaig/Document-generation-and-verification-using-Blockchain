@@ -1,3 +1,4 @@
+const apps = require('./static/JS/app.js');
 const express = require('express');
 const path = require('path');
 const app = express();
@@ -23,10 +24,11 @@ app.use(session({
 
 //POST REQ
 var bodyParser = require('body-parser');
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded());
+// app.use(bodyParser.json());
+// app.use(bodyParser.urlencoded());
 // in latest body-parser use like below.
-app.use(bodyParser.urlencoded({ extended: true }));
+// app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: true }))
 
 
 // const mysql = require('mysql');
@@ -62,6 +64,8 @@ app.set('views', path.join(__dirname, 'views'));// set views directory
 
 // END POINTS 
 app.get('/', (req, res)=>{
+       
+            App.load()
         res.sendFile(path.join(__dirname+'/views/home.html'));
 });
 
@@ -101,8 +105,10 @@ app.post('/signup',(req, res)=>{
 
 
 
-
-
+App.dummy()
+App.getAcc(function(answer){
+    console.log(answer);
+})
 
 
 

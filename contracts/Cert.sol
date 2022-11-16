@@ -3,17 +3,21 @@ contract Cert{
     uint public count=0;
     struct Task{
         uint id;
-        string content;
-        bool completed;
+        string hashval;
+        string name;
+        string course;
+        string issuer;
+        string date;
+        bool exists;
     }
-    mapping(uint => Task)public  tasks;
+    mapping(string => Task)public  tasks;
 
     constructor() public{
-        createTask("Default Task");
+        createTask("123", "Mirza Mohammad Baig", "testing Web3", "BVRIT", "15-11-2022");
     }
 
-    function createTask(string memory _content) public{
+    function createTask(string memory _hashval,string memory _name,string memory _course, string memory _issuer, string memory _date) public{
         count ++;
-        tasks[count] = Task(count, _content, false);
+        tasks[_hashval] = Task(count, _hashval,_name, _course, _issuer, _date, true);
     }
 }
